@@ -32,4 +32,17 @@ public class AppTest {
 
         assertEquals(0, rs);
     }
+    @Test
+    public void 곱하기(){
+        int rs = Calculator.run("10 * 10");
+
+        assertEquals(100, rs);
+    }
+
+    @Test
+    public void 나누기(){
+        int rs = Calculator.run("10 / 10");
+
+        assertEquals(1, rs);
+    }
 }
