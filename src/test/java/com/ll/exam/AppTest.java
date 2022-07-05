@@ -45,4 +45,18 @@ public class AppTest {
 
         assertEquals(1, rs);
     }
+
+    @Test
+    public void 다항식1(){
+        int rs = Calculator.run("10 + 10 - 5");
+
+        assertEquals(15, rs);
+    }
+
+    @Test
+    public void 다항식2(){
+        int rs = Calculator.run("10 + 10 - 5 * 2");
+
+        assertEquals(10, rs);
+    }
 }
